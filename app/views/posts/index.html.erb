@@ -1,0 +1,4 @@
+<%# Take each post from @posts and write an href where the link is the post_path and the link text is the post.title %>
+<% @posts.each do |post| %>
+    <div><%= link_to post.title, post_path(post) %></div>
+  <% end %>
